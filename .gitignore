@@ -43,3 +43,6 @@ bin/
 .DS_Store
 build-data.txt
 run/
+
+### LabyMod ###
+.assetsroot

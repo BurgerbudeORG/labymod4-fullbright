@@ -41,7 +41,7 @@ public class FullBrightAddon extends LabyAddon<FullBrightConfiguration> {
   }
 
   @Subscribe
-  public void onUpdateLighmapTexture(UpdateLightmapTextureEvent event) {
+  public void onUpdateLightmapTexture(UpdateLightmapTextureEvent event) {
     if (this.configuration().enabled().get()) {
       event.setCancelled(true);
     }

@@ -22,6 +22,7 @@ import net.labymod.api.Laby;
 import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.renderer.texture.DynamicTexture;
 import org.burgerbude.labymod.addons.fullbright.core.event.UpdateLightmapTextureEvent;
+import org.burgerbude.labymod.addons.fullbright.core.util.TextureModifier;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -66,9 +67,7 @@ public class MixinEntityRenderer {
   }
 
   private void fullbright$writeWhiteTexture() {
-    for (int i = 0; i < 256; i++) {
-      this.lightmapTexture.getTextureData()[i] = 0xFFFFFFFF;
-    }
+    TextureModifier.modifyLegacyTexture(16, 16, (index, color) -> this.lightmapTexture.getTextureData()[index] = color);
   }
 
 }
