@@ -1,4 +1,4 @@
-import gradle.kotlin.dsl.accessors._64acc05bf1a66f2c855e386526b4bcff.api
+import gradle.kotlin.dsl.accessors._e054d9723d982fdb55b1e388b8ab0cbf.api
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.DependencyHandler
