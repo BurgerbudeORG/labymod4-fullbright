@@ -3,7 +3,7 @@ rootProject.name = "fullbright"
 includeBuild("laby-build-logic")
 
 pluginManagement {
-  val labyGradlePluginVersion = "0.3.25"
+  val labyGradlePluginVersion = "0.3.48"
   plugins {
     id("net.labymod.gradle") version (labyGradlePluginVersion)
   }
