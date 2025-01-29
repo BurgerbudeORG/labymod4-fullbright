@@ -1,5 +1,5 @@
 plugins {
-  id("basic-project-convention")
+  //id("basic-project-convention")
   id("org.cadixdev.licenser") version ("0.6.1")
 
   id("net.labymod.labygradle")
@@ -32,7 +32,7 @@ labyMod {
 }
 
 subprojects {
-  plugins.apply("basic-project-convention")
+  //plugins.apply("basic-project-convention")
   plugins.apply("net.labymod.labygradle")
   plugins.apply("net.labymod.labygradle.addon")
   plugins.apply("org.cadixdev.licenser")
